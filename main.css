@@ -2,5 +2,73 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.school-year-container {
+  text-align: center;
+  border: 1px solid #31708f;
+  padding-bottom: 5px;
+}
+
+.school-year-title {
+  color: #fff;
+  background-color: #428bca;
+  margin-bottom: 8px;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.quarters-container {
+  display: flex;
+  font-size: 16px;
+}
+
+.quarter-wrapper {
+  width: 30%;
+  min-width: 300px;
+  border: 1px solid #bce8f1;
+  margin: 0 5px;
+}
+
+.courses-container {
+  border: none;
+}
+
+.quarter-title {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #bce8f1;
+  color: #31708f;
+}
+
+.quarter-name {
+  grid-column-start: 2;
+}
+
+.add-courses-button {
+  margin-left: auto;
+  border-radius: 25px;
+  border: none;
+}
+
+.course-label-wrapper,
+.course-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border-bottom: 1px solid #bce8f1;
+}
+
+.course-total-credits-wrapper {
+  display: flex;
+  justify-content: right;
+}
+
+.course-total-credits-wrapper > * {
+  width: 25%;
 }

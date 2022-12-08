@@ -11,29 +11,49 @@
     <h1>UCSD Course Tracker</h1>
     <div class="school-year-container">
       <div class="school-year-title">2022 - 2023 School Year</div>
-      <div class="quarter-wrapper">
-        <div class="quarter-name">
-          Fall Quarter
-          <button>+</button>
-        </div>
-        <div class="courses-wrapper">
-          <div class="courses-description-container">
-            <div class="passed-or-no-passed">P/NP</div>
-            <div class="course-name-description">Course</div>
-            <div class="course-credits-description">Course Credits</div>
-            <div class="course-credits-earned-description">Credits Earned</div>
+      <div class="quarters-container">
+        <div class="quarter-wrapper">
+          <div class="quarter-title">
+            <div class="quarter-name">Fall Quarter</div>
+            <button class="add-courses-button">+</button>
           </div>
-          <div class="course-wrapper">
-            <label for="course-completion" class="checkbox-wrapper"
-              ><input type="checkbox" class="course-completi"
-            /></label>
-            <div class="course-name">Some Course</div>
-            <div class="course-credits">4.0</div>
-            <div class="course-credits-status">IP</div>
-          </div>
-          <div class="course-credits-possible-and-earned">
-            <div class="total-credits-possible">16.0</div>
-            <div class="total-credits-earned">4.0</div>
+          <div class="overall-course-grid">
+            <div class="course-label-wrapper">
+              <div class="course-label-pass-or-no-pass">P/NP</div>
+              <div class="course-label-course-name">Course Name</div>
+              <div class="course-label-credits-possible">Credits Possible</div>
+              <div class="course-label-credits-earned">Credits Earned</div>
+            </div>
+            <div class="courses-container">
+              <div class="course-wrapper">
+                <label
+                  class="course-pass-or-no-pass-checkbox-wrapper"
+                  for="course-pass-or-no-pass-checkbox"
+                  ><input
+                    class="course-pass-or-no-pass-checkbox"
+                    type="checkbox"
+                /></label>
+                <div class="course-name">CSE 21</div>
+                <div class="course-credits-possible">4.0</div>
+                <div class="course-credits-earned">IP</div>
+              </div>
+              <div class="course-wrapper">
+                <label
+                  class="course-pass-or-no-pass-checkbox-wrapper"
+                  for="course-pass-or-no-pass-checkbox"
+                  ><input
+                    class="course-pass-or-no-pass-checkbox"
+                    type="checkbox"
+                /></label>
+                <div class="course-name">CSE 21</div>
+                <div class="course-credits-possible">4.0</div>
+                <div class="course-credits-earned">IP</div>
+              </div>
+            </div>
+            <div class="course-total-credits-wrapper">
+              <div class="course-total-credits-possible">4.0</div>
+              <div class="course-total-credits-earned">4.0</div>
+            </div>
           </div>
         </div>
       </div>
